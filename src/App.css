@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+body{
+    background: rgb(156,39,157);
+    background: linear-gradient(90deg, rgba(156,39,157,1) 21%, rgba(255,117,122,1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+    margin-top: 5vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.agroupButtons{
+    margin-left: 25%;
+    margin-top: 5vh;
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+/* .agroupButtons > button{
+    cursor: pointer ;
+    color: azure;
+    width: 100px;
+    border-radius: 3px;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+} */
+
+.nameCity{
+    z-index: 999;
+    color: #fff;
+    margin-top: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.graphic{
+    width: 100%;
+}
+
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    width: 15vw;
+    color: #fff;
+    cursor: pointer;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    text-align: center;
+    padding: 1em 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .tres {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
   }
+  .tres:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+  
+
+@media screen and (max-width: 900px) {
+    .agroupButtons{
+        margin-left: 25%;
+        margin-top: 5vh;
+        display: grid;
+        width: 50%;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .btn {
+        box-sizing: border-box;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background-color: transparent;
+        border: 2px solid #e74c3c;
+        border-radius: 0.6em;
+        width: auto;
+        color: #fff;
+        cursor: pointer;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+        align-self: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 20px;
+        text-align: center;
+        padding: 1em 2em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+      }
+}
+
+
+@media screen and (max-width: 500px) {
+    .agroupButtons{
+        margin-left: 37%;
+        margin-top: 5vh;
+        display: grid;
+        width: 30%;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .btn {
+        box-sizing: border-box;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background-color: transparent;
+        border: 2px solid #e74c3c;
+        border-radius: 0.6em;
+        width: auto;
+        color: #fff;
+        cursor: pointer;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+        align-self: center;
+        font-size: .5rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 20px;
+        text-align: center;
+        padding: 1em 2em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+      }
+}
+
+
+.creator{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vh;
+    font-family: 'Montserrat', sans-serif;
+
 }
